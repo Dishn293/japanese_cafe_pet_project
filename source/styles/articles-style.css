@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Neucha&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Neucha, serif; 
+    background: linear-gradient(180deg, #d41111c5 16%, #d5cdcd 100%); 
+}
+p {
+    font-size: 3em;
+}
+
+/* Нав. бар */
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, #bd2e59 0%, #d41b1b 100%);
+}
+
+.text-main, .text-katalog, .text-articles {
+    display: flex;
+    padding: 2em;
+    color: white;
+    text-decoration: none;
+    text-align:end;
+    align-items: center;
+}
+
+.text-articles {
+    background-color: rgba(59, 59, 59, 0.322);
+}
+
+.nav-bar a:hover {
+    background-color: rgba(59, 59, 59, 0.322);
+}
+
+/* Видео заставка */
+.bgvideo {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.bgvideo video {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-text {
+    color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.video-text p {
+    font-size: 3em;
+}
+
+/* .effect {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+    background-color: rgba(44, 44, 44, 0.034);
+} */
+
+/* Статьи */
+
+.article {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.text-for-article {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Подвал */
+.footer {
+    display: flex;
+    background-color: #cfcfcfb6;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+.footer p {
+    font-size: 2em;
+}
+
+.footer a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footer img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Адаптив для нав.бара и подвала*/
+/* Планшет */
+@media (max-width: 768px) {
+    .nav-bar {
+        display: block;
+    }
+    
+    .nav-bar a {
+        font-size: 1.5em;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .text-for-article {
+        font-size: 0.5em;
+    }
+}
